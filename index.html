@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coopérative Ouizelne — Made with heart by local women artisans</title>
+  <meta name="description" content="Ouizelne Women's Cooperative in Morocco — organic, eco-friendly argan oil, traditional ground products and handcrafted goods, made by local women artisans. Join us for a traditional meal and craft experience.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23b85c38'/><text x='50' y='72' font-size='64' text-anchor='middle' fill='white' font-family='Georgia'>O</text></svg>">
+</head>
+<body class="page-fade">
+
+  <!-- ============================================================ NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="Coopérative Ouizelne — home">
+        <span class="brand__mark">O</span>
+        <span class="brand__text">
+          <span class="brand__name">Coopérative Ouizelne</span>
+          <span class="brand__sub">Women's Cooperative</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="experience.html">Visit Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" data-nav>Home</a>
+    <a href="about.html" data-nav>About</a>
+    <a href="shop.html" data-nav>Shop</a>
+    <a href="experience.html" data-nav>Visit Us</a>
+    <a href="contact.html" data-nav>Contact</a>
+    <a class="btn btn--wa" href="https://wa.me/212600000000?text=Hello%20Coop%C3%A9rative%20Ouizelne!">Chat on WhatsApp</a>
+  </div>
+
+  <main>
+    <!-- ============================================================ HERO -->
+    <section class="hero" id="top">
+      <div class="hero__media">
+        <div class="ph"></div>
+        <!-- Replace with a real photo of the women / landscape / craft -->
+        <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=1600&q=80"
+             alt="Women of the Ouizelne cooperative gathered together" onerror="this.remove()">
+      </div>
+      <span class="hero__motif hero__motif--1" aria-hidden="true">🫒</span>
+      <span class="hero__motif hero__motif--2" aria-hidden="true">🌿</span>
+
+      <div class="wrap hero__content">
+        <span class="hero__badge"><span class="dot"></span> Proudly made in Morocco</span>
+        <h1>
+          Coopérative Ouizelne
+          <span class="accent">Made with heart by local women artisans</span>
+        </h1>
+        <p class="hero__tag">Organic, eco-friendly argan oil and traditional handcrafted goods — grown, ground and woven by the hands of our community.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="shop.html">Discover our products</a>
+          <a class="btn btn--ghost" href="#visit" style="background:rgba(251,245,234,.14);border-color:rgba(251,245,234,.5);color:#fff">Visit us</a>
+        </div>
+        <a class="hero__scroll" href="#products" aria-label="Scroll to products">
+          <span class="mouse" aria-hidden="true"></span> Scroll to explore
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================ TRUST TICKER -->
+    <div class="ticker" aria-label="Why people trust us">
+      <div class="ticker__track" id="tickerTrack">
+        <span>100% organic &amp; eco-friendly</span>
+        <span>Supporting local women &amp; traditional crafts</span>
+        <span>Trusted by 14.7K+ followers</span>
+        <span>Argan oil pressed the traditional way</span>
+        <span>Stone-ground the way our grandmothers did</span>
+        <span>Welcoming visitors from around the world</span>
+        <!-- duplicated by JS for a seamless loop -->
+      </div>
+    </div>
+
+    <!-- ============================================================ STATS -->
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="stats" data-reveal-group>
+          <div class="stat" data-reveal>
+            <div class="stat__num" data-count="14.7" data-decimals="1" data-suffix="K+">0</div>
+            <div class="stat__label">Social followers</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat__num" data-count="24" data-suffix="+">0</div>
+            <div class="stat__label">Women artisans</div>
+          </div>
+          <div class="stat" data-reveal>
+            <div class="stat__num" data-count="12" data-suffix="">0</div>
+            <div class="stat__label">Years together</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ CATEGORIES -->
+    <section class="section" id="products">
+      <div class="wrap">
+        <div class="section-title" style="margin-bottom:26px" data-reveal>
+          <span class="eyebrow">Our Products</span>
+          <h2>Hand-made, and full of care</h2>
+          <p class="section-sub">Every jar, bag and basket is prepared by the women of the cooperative — organic, eco-friendly and rooted in generations of tradition.</p>
+        </div>
+        <div class="grid grid-4" data-render="categories" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- ============================================================ FEATURED PRODUCTS -->
+    <section class="section section--sand">
+      <div class="wrap">
+        <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:flex-end;margin-bottom:26px">
+          <div class="section-title" data-reveal>
+            <span class="eyebrow">Favourites</span>
+            <h2>Featured products</h2>
+          </div>
+          <a class="btn btn--ghost btn--sm" href="shop.html" data-reveal>See all products →</a>
+        </div>
+        <div class="grid grid-4" data-render="products" data-limit="6" data-reveal-group></div>
+      </div>
+    </section>
+
+    <!-- ============================================================ VISIT US (CULTURAL EXPERIENCE) -->
+    <section class="section" id="visit">
+      <div class="wrap">
+        <div class="visit" data-reveal>
+          <span class="visit__glow" aria-hidden="true"></span>
+          <div class="visit-layout">
+            <div>
+              <span class="eyebrow">A Cultural Experience</span>
+              <h2>Visit us — join us around the fire</h2>
+              <p class="section-sub">More than a shop, we open our doors. Share a traditional meal with the women who make everything here, and see how argan is ground by hand, exactly as it has always been done.</p>
+
+              <div class="visit__included">
+                <div class="visit__item">
+                  <span class="emj" aria-hidden="true">🍲</span>
+                  <div><h4>A home-cooked meal</h4><p>Tagine, fresh bread and seasonal dishes shared at one table.</p></div>
+                </div>
+                <div class="visit__item">
+                  <span class="emj" aria-hidden="true">🍵</span>
+                  <div><h4>Mint tea &amp; hospitality</h4><p>Sweet mint tea poured the Moroccan way, around the fire.</p></div>
+                </div>
+                <div class="visit__item">
+                  <span class="emj" aria-hidden="true">🪨</span>
+                  <div><h4>Craft demonstration</h4><p>Watch — and try — the traditional stone grinding of argan.</p></div>
+                </div>
+                <div class="visit__item">
+                  <span class="emj" aria-hidden="true">🧺</span>
+                  <div><h4>Hands-on workshops</h4><p>Weaving and cosmetics, guided by our artisans.</p></div>
+                </div>
+              </div>
+
+              <div class="facts">
+                <div class="fact"><strong>2–4 h</strong><span>Duration</span></div>
+                <div class="fact"><strong>2–12</strong><span>Group size</span></div>
+                <div class="fact"><strong>From 250 DH</strong><span>Per person</span></div>
+                <div class="fact"><strong>EN · FR · AR</strong><span>Languages</span></div>
+              </div>
+
+              <a class="btn btn--wa btn--block"
+                 href="https://wa.me/212600000000?text=Hello%20Coop%C3%A9rative%20Ouizelne%2C%20I%20would%20like%20to%20book%20a%20cultural%20visit%20(meal%20%2B%20craft%20demonstration).%20Could%20you%20tell%20me%20the%20available%20dates%3F"
+                 target="_blank" rel="noopener">
+                Book your visit via WhatsApp
+              </a>
+              <p style="margin:12px 0 0;font-size:.85rem;color:rgba(251,245,234,.75)">
+                Prefer details first? <a href="experience.html" style="color:var(--gold);font-weight:800">See what the experience includes →</a>
+              </p>
+            </div>
+
+            <div class="visit__media">
+              <span class="emoji-overlay" aria-hidden="true">🔥</span>
+              <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1000&q=80"
+                   alt="Traditional meal and mint tea shared around the fire" loading="lazy" onerror="this.remove()">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ WHY CHOOSE US -->
+    <section class="section section--sand">
+      <div class="wrap">
+        <div class="center section-title mx-auto" style="margin-bottom:30px" data-reveal>
+          <span class="eyebrow">Why choose us</span>
+          <h2>Authentic, honest and community-first</h2>
+        </div>
+        <div class="grid grid-4" data-reveal-group>
+          <div class="feature" data-reveal>
+            <div class="feature__icon" aria-hidden="true">🌿</div>
+            <h3>Organic &amp; eco-friendly</h3>
+            <p>Naturally grown, chemical-free and kind to the land, packed with care for the planet.</p>
+          </div>
+          <div class="feature" data-reveal>
+            <div class="feature__icon" aria-hidden="true">👐</div>
+            <h3>Made by local women artisans</h3>
+            <p>Every product is proudly prepared by the women who own and run the cooperative.</p>
+          </div>
+          <div class="feature" data-reveal>
+            <div class="feature__icon" aria-hidden="true">🏘️</div>
+            <h3>Supporting our community</h3>
+            <p>Your purchase supports local families, fair work and traditional crafts that matter.</p>
+          </div>
+          <div class="feature" data-reveal>
+            <div class="feature__icon" aria-hidden="true">🫖</div>
+            <h3>An authentic experience</h3>
+            <p>Come share a real taste of rural Moroccan life — food, tea and genuine hospitality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ CTA STRIP -->
+    <section class="section section--olive">
+      <div class="wrap center">
+        <h2 data-reveal>Bring home a piece of Ouizelne</h2>
+        <p class="section-sub mx-auto" data-reveal style="margin-bottom:24px">Order directly on WhatsApp — no account, no fuss. We confirm every order personally.</p>
+        <a class="btn btn--primary" href="shop.html" data-reveal>Discover our products</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================ FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" style="margin-bottom:14px">
+          <span class="brand__mark">O</span>
+          <span class="brand__text">
+            <span class="brand__name">Coopérative Ouizelne</span>
+            <span class="brand__sub">Women's Cooperative</span>
+          </span>
+        </a>
+        <p style="color:rgba(251,245,234,.72);max-width:38ch">A women-led cooperative in Morocco, producing organic argan oil, traditional ground products and handcrafted goods — and welcoming visitors to share our way of life.</p>
+        <div class="socials" style="margin-top:16px">
+          <a class="social-btn" href="https://instagram.com/cooperative_feminine_ouizelne" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a class="social-btn" href="https://wa.me/212600000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 12.4c-.3-.2-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1 2.9 1.2 3.1 2.1 3.2 5 4.5c.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4s-.3-.2-.6-.3z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About the cooperative</a></li>
+          <li><a href="shop.html">Shop all products</a></li>
+          <li><a href="experience.html">Cultural visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visit &amp; contact</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+212600000000">+212 600 000 000</a></li>
+          <li><a href="mailto:hello@ouizelne.coop">hello@ouizelne.coop</a></li>
+          <li>Ouizelne, Morocco 🇲🇦</li>
+          <li><a class="footer__wa" href="https://wa.me/212600000000" target="_blank" rel="noopener">Message us on WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap footer__bottom">
+      <span>© <span data-year>2025</span> Coopérative Féminine Ouizelne · Made with ♥ by local women artisans</span>
+      <span>Hand-made in Morocco</span>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/212600000000?text=Hello%20Coop%C3%A9rative%20Ouizelne!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 12.4c-.3-.2-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1 2.9 1.2 3.1 2.1 3.2 5 4.5c.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4s-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
